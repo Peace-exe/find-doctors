@@ -26,24 +26,24 @@ const ctaItems: CTAItem[] = [
 const CTAButtons: React.FC = () => {
   return (
     <section className="py-8 bg-background">
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row gap-4 justify-center">
-        {ctaItems.map((cta) => {
-          const Icon = cta.icon;
-          return (
-            <button
-              key={cta.title + cta.subtitle}
-              className={`flex items-center gap-4 px-8 py-5 rounded-xl text-lg font-heading font-semibold transition-all shadow-lg ${cta.className}`}
-            >
-              <Icon className="w-6 h-6" />
-              <div className="text-left">
-                <div className="text-xs font-body font-normal opacity-80">{cta.subtitle}</div>
-                <div>{cta.title}</div>
-              </div>
-            </button>
-          );
-        })}
-      </div>
-    </section>
+  <div className="container mx-auto px-4 flex flex-col sm:flex-row gap-4 justify-center">
+    {ctaItems.map((cta) => {
+      const Icon = cta.icon;
+      return (
+        <button
+          key={cta.title + cta.subtitle}
+          className={`flex items-center w-full sm:w-auto sm:flex-1 sm:max-w-xs gap-4 px-6 sm:px-8 py-4 sm:py-5 rounded-xl text-lg font-heading font-semibold transition-all shadow-lg ${cta.className}`}
+        >
+          <Icon className="w-6 h-6 shrink-0" />
+          <div className="text-left">
+            <div className="text-xs font-body font-normal opacity-80">{cta.subtitle}</div>
+            <div>{cta.title}</div>
+          </div>
+        </button>
+      );
+    })}
+  </div>
+</section>
   );
 };
 

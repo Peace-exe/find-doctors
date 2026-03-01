@@ -100,57 +100,15 @@ Open in browser:
 ```
 http://localhost:5173
 ```
-
----
-
-## Screenshots
-
-Add images inside a `/screenshots` folder, then reference them:
-
-```
-screenshots/home-desktop.png
-screenshots/home-mobile.png
-screenshots/testimonials.png
-```
-
-Then in README:
-
-```md
-![Desktop](./screenshots/home-desktop.png)
-![Mobile](./screenshots/home-mobile.png)
-```
-
----
-
-## What I Learned
-
-- Implemented nested routing using React Router and layout routes
-- Built reusable UI components using shadcn/ui
-- Managed application providers and global state using React Query
-- Designed responsive layouts using Tailwind CSS breakpoints
-- Understood layout patterns (full-bleed hero vs container sections)
-- Structured a scalable React project architecture
-
----
-
-## Future Improvements
-
-- Location-based doctor search
-- Filter by treatment type
-- Appointment booking system
-- Authentication for clinics
-- Admin dashboard for managing doctors
-- Backend API integration
-
 ---
 
 ## Author
 
 **Aman Yadav**  
-B.Tech Computer Science — Gautam Buddha University
+B.Tech Computer Science and Engineering — Gautam Buddha University
 
-GitHub: https://github.com/yourusername  
-LinkedIn: https://linkedin.com/in/yourprofile
+GitHub: https://github.com/Peace-exe  
+LinkedIn: https://linkedin.com/in/amanyadav2303
 
 ---
 

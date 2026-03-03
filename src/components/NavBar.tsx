@@ -1,11 +1,11 @@
-import { Search, User, Menu, X } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-hero text-hero-foreground sticky top-0 z-50 bg-[#018C94] px-28 text-white">
+    <nav className="bg-hero text-hero-foreground sticky top-0 z-50 bg-primary px-28 ">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-heading font-bold tracking-tight">
@@ -14,15 +14,15 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8 font-medium text-sm ">
-          <a href="#" className="hover:text-amber transition-colors hover:text-black">Home</a>
-          <a href="#about" className="hover:text-amber transition-colors hover:text-black">About Us</a>
-          <a href="#conditions" className="hover:text-amber transition-colors hover:text-black">Specialties</a>
-          <a href="#articles" className="hover:text-amber transition-colors hover:text-black">Articles</a>
+          <a href="#" className="hover:text-amber transition-colors ">Home</a>
+          <a href="#about" className="hover:text-amber transition-colors ">About Us</a>
+          <a href="#conditions" className="hover:text-amber transition-colors ">Specialties</a>
+          <a href="#articles" className="hover:text-amber transition-colors">Articles</a>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
           <button className="p-2 rounded-full hover:bg-teal-dark transition-colors">
-            <Search className="w-4 h-4 hover:text-black" />
+            <Search className="w-4 h-4 hover:text-amber" />
           </button>
                     {/*
             <button className="flex items-center gap-2 bg-amber text-foreground px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">

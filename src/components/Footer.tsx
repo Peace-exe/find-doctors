@@ -2,7 +2,7 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer text-footer-foreground bg-[#018C94] text-white px-28">
+    <footer className="bg-footer bg-primary text-white px-28">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -14,8 +14,8 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-heading font-semibold text-primary-foreground mb-3">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-heading font-semibold text-primary-foreground mb-3 ">Quick Links</h4>
+            <ul className="space-y-2 text-sm opacity-80">
               <li><a href="#" className="hover:text-amber transition-colors">Home</a></li>
               <li><a href="#" className="hover:text-amber transition-colors">About Us</a></li>
               <li><a href="#" className="hover:text-amber transition-colors">Contact Us</a></li>
@@ -23,8 +23,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-heading font-semibold text-primary-foreground mb-3">Others</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-heading font-semibold text-primary-foreground mb-3 ">Others</h4>
+            <ul className="space-y-2 text-sm opacity-80">
               <li><a href="#" className="hover:text-amber transition-colors">CSR</a></li>
               <li><a href="#" className="hover:text-amber transition-colors">Annual</a></li>
               <li><a href="#" className="hover:text-amber transition-colors">Returns</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="font-heading font-semibold text-primary-foreground mb-3">Connect with us</h4>
-            <div className="flex gap-3">
+            <div className="flex gap-3 opacity-80">
               <a href="#" className="w-9 h-9 rounded-full bg-primary/30 flex items-center justify-center hover:bg-amber transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>

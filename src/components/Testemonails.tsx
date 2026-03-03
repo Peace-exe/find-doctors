@@ -70,7 +70,7 @@ const Testimonials: React.FC = () => {
                     </div>
                     <div className="flex gap-0.5 mb-3">
                       {Array.from({ length: 5 }, (_, s) => (
-                        <Star key={s} className="w-4 h-4 text-amber fill-amber" />
+                        <Star key={s} className="w-4 h-4 text-amber-400 fill-amber-400" />
                       ))}
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed">{t.text}</p>

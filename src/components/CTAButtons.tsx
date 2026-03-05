@@ -23,7 +23,7 @@ const ctaItems: CTAItem[] = [
     icon: Phone,
     subtitle: "Talk to",
     title: "Dermatologists",
-    className: "bg-amber text-foreground hover:opacity-90",
+    className: "bg-amber-400 text-foreground hover:opacity-90",
     action: "talk",
   },
 ];

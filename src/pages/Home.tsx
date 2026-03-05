@@ -6,6 +6,7 @@ import TopDoctors from "@/components/TopDoctors";
 import ContactUs from "@/components/ContactUs"
 import FAQSection from "@/components/FAQSection";
 import CallbackBanner from "@/components/CallbackBanner";
+import ArticlesSection from "@/components/ArticleSection";
 
 export default function Home(){
     return <>
@@ -13,6 +14,7 @@ export default function Home(){
     <CTAButtons/>
     <ConditionsTreated/>
     <TopDoctors/>
+    <ArticlesSection/>
     <Testimonials/>
     <ContactUs/>
     <FAQSection/>

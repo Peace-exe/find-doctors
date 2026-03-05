@@ -6,8 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import NotFound from "./pages/NotFound";
 import Layout from "./pages/Layout";
-
+import DoctorProfile from "./pages/DoctorProfile";
 import Home from "./pages/Home";
+import SearchDoctors from "./pages/SearchDoctors";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -19,6 +21,8 @@ const App = () => (
         <Routes>
           <Route  element={<Layout/>} >
             <Route path="/" element={<Home/>}/>
+            <Route path="/doctor/:id" element={<DoctorProfile />} />
+            <Route path="/search" element={<SearchDoctors />} />
             
 
           

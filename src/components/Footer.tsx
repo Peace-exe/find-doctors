@@ -16,19 +16,19 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-primary-foreground mb-3 ">Quick Links</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:text-amber transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">Blogs</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Home</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Contact Us</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Blogs</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-heading font-semibold text-primary-foreground mb-3 ">Others</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:text-amber transition-colors">CSR</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">Annual</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">Returns</a></li>
-              <li><a href="#" className="hover:text-amber transition-colors">Notices</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">CSR</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Annual</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Returns</a></li>
+              <li><a href="#" className="hover:text-amber-400 transition-colors">Notices</a></li>
             </ul>
           </div>
           <div>

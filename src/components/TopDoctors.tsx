@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Star, MapPin, Phone, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import doctorAvatar from "/doctor-avatar.png";
+import { useNavigate } from "react-router-dom";
+import ConsultationDialog from "./ConsultationDialog";
 
 interface Doctor {
   name: string;
@@ -27,7 +29,10 @@ const doctors: Doctor[] = [
 ];
 
 const TopDoctors: React.FC = () => {
+  const [showDialog,setShowDialog] = useState<boolean>(false);
+  const navigate = useNavigate();
   return (
+    <>
     <section className="py-12 my-4 mx-4 md:mx-16 lg:mx-32 bg-background">
   <div className="container mx-auto px-4">
     <div className="flex items-center justify-between mb-8">
@@ -78,11 +83,11 @@ const TopDoctors: React.FC = () => {
               </p>
             </div>
             <div className="flex gap-2 mt-4">
-              <Button className="flex-1 min-w-0" size="sm">
+              <Button className="flex-1 min-w-0" size="sm" onClick={() => navigate(`/doctor/${i}`)}>
                 <Eye className="w-4 h-4 shrink-0" />
                 <span className="truncate">View Profile</span>
               </Button>
-              <Button variant="outline" className="flex-1 min-w-0" size="sm">
+              <Button variant="outline" className="flex-1 min-w-0" size="sm" onClick={()=>setShowDialog(true)}>
                 <Phone className="w-4 h-4 shrink-0" />
                 <span className="truncate">Call Clinic</span>
               </Button>
@@ -93,6 +98,8 @@ const TopDoctors: React.FC = () => {
     </div>
   </div>
 </section>
+<ConsultationDialog open={showDialog} onOpenChange={setShowDialog}/>
+</>
   );
 };
 

@@ -59,7 +59,7 @@ const ContactUs: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter Full name"
-                  className="bg-white text-foreground border-0 focus-visible:ring-amber placeholder:text-muted-foreground/60"
+                  className="bg-white text-foreground border-0 focus-visible:ring-amber-400 placeholder:text-muted-foreground/60"
                 />
               </div>
               <div className="space-y-1">
@@ -69,7 +69,7 @@ const ContactUs: React.FC = () => {
                   value={formData.mobile}
                   onChange={handleChange}
                   placeholder="Enter Mobile No."
-                  className="bg-white text-foreground border-0 focus-visible:ring-amber placeholder:text-muted-foreground/60"
+                  className="bg-white text-foreground border-0 focus-visible:ring-amber-400 placeholder:text-muted-foreground/60"
                 />
               </div>
               <div className="space-y-1">
@@ -79,7 +79,7 @@ const ContactUs: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter email"
-                  className="bg-white text-foreground border-0 focus-visible:ring-amber placeholder:text-muted-foreground/60"
+                  className="bg-white text-foreground border-0 focus-visible:ring-amber-400 placeholder:text-muted-foreground/60"
                 />
               </div>
               <div className="space-y-1">
@@ -90,13 +90,13 @@ const ContactUs: React.FC = () => {
                   onChange={handleChange}
                   placeholder="How can we help you?"
                   rows={4}
-                  className="bg-white text-foreground border-0 focus-visible:ring-amber resize-none placeholder:text-muted-foreground/60"
+                  className="bg-white text-foreground border-0 focus-visible:ring-amber-400 resize-none placeholder:text-muted-foreground/60"
                 />
               </div>
               <div className="pt-2 flex justify-center">
                 <Button
                   type="button"
-                  className="bg-white text-foreground hover:bg-amber px-10 font-semibold shadow-md"
+                  className="bg-white text-foreground hover:bg-amber-400 px-10 font-semibold shadow-md"
                 >
                   Submit
                 </Button>

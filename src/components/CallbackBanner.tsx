@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const CallbackBanner: React.FC = () => {
   return (
-    <section className="bg-amber py-4">
+    <section className="bg-amber-400 py-4">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4">
         <div className="flex items-center gap-2 text-foreground font-heading font-semibold text-sm text-center">
           <Phone className="w-4 h-4" />

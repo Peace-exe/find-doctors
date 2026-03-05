@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 
 import articleImg1 from "/articleImg1.png";
 import articleImg2 from "/articleImg2.png";
+import { useNavigate } from "react-router-dom";
 interface Article {
   title: string;
   excerpt: string;
@@ -25,6 +26,7 @@ const articles: Article[] = [
 ];
 
 const ArticlesSection: React.FC = () => {
+    const navigate = useNavigate();
   return (
     <section id="articles" className="py-12 bg-primary/10 mx-4 rounded-xl md:mx-16 lg:px-32">
       <div className="container mx-auto px-4">
@@ -40,7 +42,8 @@ const ArticlesSection: React.FC = () => {
           </div>
           <div className="space-y-4">
             {articles.map((article) => (
-  <div key={article.title} className="rounded-xl border border-border hover:shadow-md transition-shadow overflow-hidden flex items-stretch">
+  <div key={article.title} className="rounded-xl border border-border hover:shadow-md transition-shadow overflow-hidden flex items-stretch "
+  onClick={() => navigate(`/article/${encodeURIComponent(article.title)}`)}>
     <div className="w-32 sm:w-36 shrink-0">
       <img
         src={article.image}

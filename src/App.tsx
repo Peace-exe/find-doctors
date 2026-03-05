@@ -9,6 +9,7 @@ import Layout from "./pages/Layout";
 import DoctorProfile from "./pages/DoctorProfile";
 import Home from "./pages/Home";
 import SearchDoctors from "./pages/SearchDoctors";
+import ArticleDetail from "./pages/ArticleDetail";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/" element={<Home/>}/>
             <Route path="/doctor/:id" element={<DoctorProfile />} />
             <Route path="/search" element={<SearchDoctors />} />
+            <Route path="/article/:slug" element={<ArticleDetail />} />
             
 
           

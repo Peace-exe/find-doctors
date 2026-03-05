@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {MapPin, CheckCircle, ChevronRight } from "lucide-react";
 import doctorAvatar from "/doctor-avatar.png";
-
+import mapPlaceholder from "/mapPlaceholder.svg";
 const doctorData = {
   name: "Dr. Upasna Singhal",
   speciality: "MD Dermatology",
@@ -210,7 +210,11 @@ const DoctorProfile: React.FC = () => {
                   <MapPin className="w-3 h-3 mr-1" /> {doc.distance}
                 </Badge>
                 <div className="mt-4 w-full h-32 rounded-lg bg-muted flex items-center justify-center text-xs text-muted-foreground">
-                  Map Placeholder
+                  <img
+    src={mapPlaceholder}
+    alt="Clinic location map"
+    className="w-full h-full object-cover"
+  />
                 </div>
               </CardContent>
             </Card>

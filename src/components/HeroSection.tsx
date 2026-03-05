@@ -10,10 +10,10 @@ const highlights = [
 const HeroSection = () => {
   return (
     <section
-      className="relative text-white overflow-hidden"
+      className="relative text-white overflow-hidden "
       style={{
         backgroundImage: `url(${heroImage})`,
-        backgroundSize: "cover",
+        backgroundSize: "110%" ,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}

@@ -1,12 +1,15 @@
 import { Search, Menu, X, User } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import LoginDialog from "./LoginDialog";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   const navigate = useNavigate();
 
   return (
+    <>
     <nav className="bg-hero text-hero-foreground sticky top-0 z-50 bg-primary px-28">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center gap-2">
@@ -30,7 +33,8 @@ const Navbar = () => {
             <Search className="w-4 h-4 hover:text-amber-400" />
           </button>
 
-          <button className="flex items-center gap-2 bg-amber-400 text-foreground px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+          <button className="flex items-center gap-2 bg-amber-400 text-foreground px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+          onClick={()=>setShowLogin(true)}>
             <User className="w-4 h-4" />
             Login
           </button>
@@ -53,6 +57,8 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    <LoginDialog open={showLogin} onOpenChange={setShowLogin}/>
+    </>
   );
 };
 
